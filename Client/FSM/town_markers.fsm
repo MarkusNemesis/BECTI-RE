@@ -52,12 +52,12 @@ class FSM
        "	" \n
        "	if (CTI_P_SideID == _sideID) then {" \n
        "		if (CTI_P_SideJoined countSide (_x nearEntities [""AllVehicles"", CTI_MARKERS_TOWN_AREA_RANGE]) > 0) then {" \n
-       "			if (markerAlpha _marker_area == 0) then { _marker_area setMarkerAlphaLocal CTI_MARKERS_OPACITY };" \n
+       "			if (markerBrush _marker_area == CTI_MARKERS_AREA_BRUSH_INACTIVE) then { _marker_area setMarkerBrushLocal CTI_MARKERS_AREA_BRUSH_ACTIVE };" \n
        "		} else {" \n
-       "			if (markerAlpha _marker_area != 0) then { _marker_area setMarkerAlphaLocal 0 };" \n
+       "			if (markerBrush _marker_area != CTI_MARKERS_AREA_BRUSH_INACTIVE) then { _marker_area setMarkerBrushLocal CTI_MARKERS_AREA_BRUSH_INACTIVE };" \n
        "		};" \n
        "	} else {" \n
-       "		if (markerAlpha _marker_area != 0) then { _marker_area setMarkerAlphaLocal 0 };" \n
+       "		if (markerBrush _marker_area != CTI_MARKERS_AREA_BRUSH_INACTIVE) then { _marker_area setMarkerBrushLocal CTI_MARKERS_AREA_BRUSH_INACTIVE };" \n
        "	};" \n
        "} forEach CTI_Towns;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;

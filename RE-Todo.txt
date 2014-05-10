@@ -12,6 +12,10 @@ Gameplay:
 	Towns:
 		Town activation range is immensely too large. Needs parameter for activation radius
 		Better markers for towns, ie TownName : Value | Also have town activation radius shown
+		Bunkers / camps
+		Town spawns - scale for town's value.
+	AI Behaviour:
+		Town AI to have poor accuracy, but to have high spotting and courage.
 		
 Features:
 	Vote for commander
@@ -27,7 +31,7 @@ Optimsation:
 		Rework a lot of spawn {} and execVM events.
 		Implement mainloop system
 		Implement event array system
-			Migrate all events to run via this event system (sans UI creation events)
+			Migrate all events to run via this event system (sans UI creation events) (Including EHs)
 		Serialize almost everything
 		
 	Clientside:

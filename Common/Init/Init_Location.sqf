@@ -41,13 +41,13 @@ if (CTI_IsClient) then {
 	_marker setMarkerBrushLocal "SolidBorder"; 
 	_marker setMarkerSizeLocal [CTI_MARKERS_TOWN_AREA_RANGE, CTI_MARKERS_TOWN_AREA_RANGE]; 
 	_marker setMarkerColorLocal _coloration;
-	_marker setMarkerAlphaLocal 0;
-	
+	_marker setMarkerAlphaLocal 0.5;
+	diag_log format ["%1 marker created for town %2", _marker, _town_name];
 	//--- Center marker
-	_marker = createMarkerLocal [format ["cti_town_marker_%1", _town], getPos _town];
-	_marker setMarkerTypeLocal "mil_flag";
-	_marker setMarkerTextLocal format["%1", _town_value];
-	_marker setMarkerColorLocal _coloration;
-	_marker setMarkerSizeLocal [0.5, 0.5]; 
+	_marker2 = createMarkerLocal [format ["cti_town_marker_%1", _town], getPos _town];
+	_marker2 setMarkerTypeLocal "mil_flag";
+	_marker2 setMarkerTextLocal format["%1 : %2", _town_name, _town_value];
+	_marker2 setMarkerColorLocal _coloration;
+	_marker2 setMarkerSizeLocal [1, 1]; 
 	// _marker setMarkerAlphaLocal CTI_MARKERS_OPACITY;
 };
