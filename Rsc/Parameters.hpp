@@ -3,7 +3,13 @@ class Params {
 		title = "AI: Teams";
 		values[] = {0,1};
 		texts[] = {"Disabled", "Enabled"};
-		default = 1;
+		default = 0;
+	};
+	class CTI_PLAYERS_GROUPSIZE {
+		title = "AI: Group Size";
+		values[] = {0,2,4,6,8,10,12,14,16,18,20,22,24,28,30,32};
+		texts[] = {"0","2","4","6","8","10","12","14","16","18","20","22","24","28","30","32"};
+		default = 12;
 	};
 	class CTI_ARTILLERY_SETUP {
 		title = "ARTILLERY: Setup";
@@ -69,7 +75,7 @@ class Params {
 		title = "RESPAWN: AI Members";
 		values[] = {0,1};
 		texts[] = {"Disabled","Enabled"};
-		default = 1;
+		default = 0;
 	};
 	class CTI_RESPAWN_FOB_RANGE {
 		title = "RESPAWN: FOB Range";
@@ -81,13 +87,13 @@ class Params {
 		title = "RESPAWN: Mobile";
 		values[] = {0,1};
 		texts[] = {"Disabled","Enabled"};
-		default = 0;
+		default = 1;
 	};
 	class CTI_RESPAWN_TIMER {
 		title = "RESPAWN: Delay";
-		values[] = {15,20,25,30,35,40,45,50,55,60};
-		texts[] = {"15 Seconds","20 Seconds","25 Seconds","30 Seconds","35 Seconds","40 Seconds","45 Seconds","50 Seconds","55 Seconds","60 Seconds"};
-		default = 30;
+		values[] = {5,10,15,20,25,30,35,40,45,50,55,60};
+		texts[] = {"5 Seconds", "10 Seconds", "15 Seconds","20 Seconds","25 Seconds","30 Seconds","35 Seconds","40 Seconds","45 Seconds","50 Seconds","55 Seconds","60 Seconds"};
+		default = 15;
 	};
 	class CTI_TOWNS_OCCUPATION {
 		title = "TOWNS: Occupation";
@@ -111,7 +117,7 @@ class Params {
 		title = "UNITS: Aircraft Countermeasures";
 		values[] = {0,1,2};
 		texts[] = {"Disabled","Enabled with Upgrade","Enabled"};
-		default = 1;
+		default = 2;
 	};
 	class CTI_MARKERS_INFANTRY {
 		title = "UNITS: Show Map Infantry";
@@ -126,7 +132,7 @@ class Params {
 		default = 0;
 	};
 	class CTI_VEHICLES_EMPTY_TIMEOUT {
-		title = "UNITS: Vehicles Reycling Delay";
+		title = "UNITS: Vehicles Recycling Delay";
 		values[] = {60,120,180,240,300,600,1200,1800,2400,3000,3600};
 		texts[] = {"1 Minute","2 Minutes","3 Minutes","4 Minutes","5 Minutes","10 Minutes","20 Minutes","30 Minutes","40 Minutes","50 Minutes","1 Hour"};
 		default = 600;
@@ -139,9 +145,9 @@ class Params {
 	};
 	class CTI_GRAPHICS_VD_MAX {
 		title = "VISUAL: View Distance";
-		values[] = {1000,1500,2000,2500,3000,3500,4000};
-		texts[] = {"1 KM","1.5 KM","2 KM","2.5 KM","3 KM","3.5 KM","4 KM"};
-		default = 2500;
+		values[] = {1000,1500,2000,2500,3000,3500,4000,5000,6000,7000,8000,9000,10000};
+		texts[] = {"1 KM","1.5 KM","2 KM","2.5 KM","3 KM","3.5 KM","4 KM","5 KM","6 KM","7 KM","8 KM","9 KM","10 KM"};
+		default = 4000;
 	};
 	class CTI_WEATHER_FAST {
 		title = "WEATHER: Fast Time";

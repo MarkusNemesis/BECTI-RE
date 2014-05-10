@@ -530,7 +530,7 @@ with missionNamespace do {
 	if (isNil 'CTI_GRAPHICS_VD_MAX') then {CTI_GRAPHICS_VD_MAX = 2500};
 	if (isNil 'CTI_GRAPHICS_TG_MAX') then {CTI_GRAPHICS_TG_MAX = 50};
 	
-	CTI_PLAYERS_GROUPSIZE = 12;
+	if (isNil 'CTI_PLAYERS_GROUPSIZE') then {CTI_PLAYERS_GROUPSIZE = 12};
 	
 	if (isNil 'CTI_RESPAWN_AI') then {CTI_RESPAWN_AI = 1};
 	if (isNil 'CTI_RESPAWN_FOB_RANGE') then {CTI_RESPAWN_FOB_RANGE = 1750}; //--- Range at which a unit can spawn at a FOB

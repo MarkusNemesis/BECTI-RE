@@ -1,0 +1,53 @@
+Gameplay:
+	Parameters:
+		AI Respawn : Disabled x
+		Mobile Respawn : Enabled x
+		Respawn Delay : 15 seconds + added options for 5 and 10 x
+		Air Countermeasures : Enabled x
+		Default viewdistance : 4000 + added 5000-10000 options x
+		To add: AI Group Size Limit parameter x
+	Base Buildings:
+		Implement some better factional base buildings OR Implement a multi-object base building system.
+		Remove "Workers" system OR make it a parameter, default off
+	Towns:
+		Town activation range is immensely too large. Needs parameter for activation radius
+		Better markers for towns, ie TownName : Value | Also have town activation radius shown
+		
+Features:
+	Vote for commander
+	Select player class type upon joining the mission via UI
+	Give player a score point if they put a player into the 'revive' state
+	Revive state leaves player at 50% health, not 100%
+	Team score HUD element
+	Starting vehicles: Ambo
+	Implement starting point randomisation (From Insurgent Warfare)
+	
+Optimsation:
+	Serverside:
+		Rework a lot of spawn {} and execVM events.
+		Implement mainloop system
+		Implement event array system
+			Migrate all events to run via this event system (sans UI creation events)
+		Serialize almost everything
+		
+	Clientside:
+		Factory:
+			When a player purchases an item from the factory, the Queue array needs that object's value assigned
+				When the object is added to the queue, the item's money value is deducted from the player
+				If the queue is cancelled, then the value of the items within will be reimbursed to the player
+					But only if the factory is not destroyed
+			When queueing items, the item's AI unit size is also added to the player's group size unless cancelled
+			
+	Common:
+		Gear:
+			The mission cannot fathom what binoculars are, causing it to vomit errors all over.
+		Functions:
+			Optimise common functions
+		
+Fixes
+	UI:
+		Warning Message: No entry 'mpmissions\BECTI-RE.Altis\description.ext/CTI_RscBuildMenu/controls/CTI_Menu_Control_BuildingList.ListScrollBar'.
+		Cannot load sound 'a3\ui_f\data\sound\new1.wss'
+		Cannot load sound 'a3\ui_f\data\sound\onover.wss'
+		Cannot load sound 'a3\ui_f\data\sound\onclick.wss'
+		
