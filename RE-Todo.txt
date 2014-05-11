@@ -10,8 +10,8 @@ Gameplay:
 		Implement some better factional base buildings OR Implement a multi-object base building system.
 		Remove "Workers" system OR make it a parameter, default off
 	Towns:
-		Town activation range is immensely too large. Needs parameter for activation radius
-		Better markers for towns, ie TownName : Value | Also have town activation radius shown
+		Town activation range is immensely too large. Needs parameter for activation radius x
+		Better markers for towns, ie TownName : Value | Also have town activation radius shown x
 		Bunkers / camps
 		Town spawns - scale for town's value.
 	AI Behaviour:

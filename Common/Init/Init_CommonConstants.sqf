@@ -322,7 +322,7 @@ CTI_TOWNS_OCCUPATION_MIN_ACTIVE = 1; //--- When the town is not held by the side
 //--- Towns: Resistance
 CTI_TOWNS_RESISTANCE_SPAWN_RANGE = 300; //--- Determine how far the units may spawn from the town center
 CTI_TOWNS_RESISTANCE_GROUPS_RATIO = 0.025; //--- Determine how many groups may spawn (scales with town value)
-CTI_TOWNS_RESISTANCE_DETECTION_RANGE = CTI_MARKERS_TOWN_AREA_RANGE + 100; //--- Determine how far a threat may be detected from the town center
+//CTI_TOWNS_RESISTANCE_DETECTION_RANGE = 300; //--- Determine how far a threat may be detected from the town center
 CTI_TOWNS_RESISTANCE_DETECTION_RANGE_AIR = 50; //--- Determine how high a threat is considered aerial
 CTI_TOWNS_RESISTANCE_INACTIVE_MAX = 300; //--- Determine how long a town may remain active when triggered
 CTI_TOWNS_RESISTANCE_MIN_ACTIVE = 1; //--- When the town is not held by the side and when no enemy is near, at least x enemies need to be alive for the town to be considered active
@@ -464,7 +464,7 @@ CTI_ECONOMY_POOL_RESOURCES_PERCENTAGE_MIN = 30; //--- Keep values of 10
 CTI_MARKERS_OPACITY = 0.5;
 CTI_MARKERS_AREA_BRUSH_INACTIVE = "SolidBorder";
 CTI_MARKERS_AREA_BRUSH_ACTIVE = "FDiagonal";
-CTI_MARKERS_TOWN_AREA_RANGE = 400;
+CTI_MARKERS_TOWN_AREA_RANGE = CTI_TOWNS_RESISTANCE_DETECTION_RANGE;
 CTI_MARKERS_UNITS_DEAD_DELAY = 50;
 CTI_MARKERS_VEHICLES_DEAD_DELAY = 125;
 

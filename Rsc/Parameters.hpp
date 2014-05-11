@@ -101,11 +101,11 @@ class Params {
 		texts[] = {"Disabled","Enabled"};
 		default = 1;
 	};
-	class CTI_MARKERS_TOWN_AREA_RANGE {
+	class CTI_TOWNS_RESISTANCE_DETECTION_RANGE {
 		title = "TOWNS: Town Activation Range";
-		values[] = {100,200,300,400,500,750,1000,1250};
-		texts[] = {"100m","200m","300m","400m","500m","750m","1000m","1250m"};
-		default = 1;
+		values[] = {100,200,300,400,500,750,1000,1250,1500,2000};
+		texts[] = {"100m","200m","300m","400m","500m","750m","1000m","1250m","1500m","2000m"};
+		default = 300;
 	};
 	class CTI_VEHICLES_AIR_AA {
 		title = "UNITS: Aircraft AA Missiles";
