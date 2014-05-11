@@ -19,6 +19,13 @@ _crews = [];
 	if (_x isKindOf "Man") then {
 		_unit = [_x, _group, [_position, 2, 15] call CTI_CO_FNC_GetRandomPosition, _sideID] call CTI_CO_FNC_CreateUnit;
 		[_created_units, _unit] call CTI_CO_FNC_ArrayPush;
+		// --- Markus - Set unit skills to be overly suppressive
+		_unit setSkill ["aimingShake", 0.1];
+		_unit setSkill ["endurance", 100];
+		_unit setSkill ["spotDistance", 100];
+		_unit setSkill ["spotTime", 100];
+		_unit setSkill ["courage", 100];
+		_unit setSkill ["commanding", 100];
 	} else {
 		_crew = switch (true) do {
 			case (_x isKindOf "Tank"): { missionNamespace getVariable format["%1_SOLDIER_CREW", _side] };
